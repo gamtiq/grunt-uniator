@@ -5,6 +5,7 @@ Combine style-tags and CSS-files linked by HTML-file into one or several files o
 Grunt plugin for [uniator](https://github.com/gamtiq/uniator)
 
 [![NPM version](https://badge.fury.io/js/grunt-uniator.png)](http://badge.fury.io/js/grunt-uniator)
+[![Build Status](https://secure.travis-ci.org/gamtiq/grunt-uniator.png?branch=master)](http://travis-ci.org/gamtiq/grunt-uniator)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Getting Started
