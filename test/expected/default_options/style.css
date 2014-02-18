@@ -1,0 +1,50 @@
+/*----- style/a.css -----*/
+
+.a {
+    position: relative;
+}
+
+
+/*----- style/b.css -----*/
+
+/* This is b.css */
+
+.b {
+    color: #0000ff;
+}
+
+.b__mod {
+    font-size: 20px;
+}
+
+
+/*----- Style tag #1 -----*/
+
+
+        h3 {
+            color: #ff0;
+        }
+    
+
+/*----- style/subdir/c.css -----*/
+
+.c {
+    width: 50%;
+}
+
+
+/*----- Style tag #2 -----*/
+
+
+        div {
+            font-size: 14px;
+        }
+    
+
+/*----- style/d.css -----*/
+
+.delta {
+    animation-name: delta;
+}
+
+

@@ -1,0 +1,53 @@
+{
+  "name": "grunt-uniator",
+  "description": "Combine style-tags and CSS-files linked by HTML-file into one or several files or style-tags",
+  "version": "0.0.1",
+  "homepage": "https://github.com/gamtiq/grunt-uniator",
+  "author": {
+    "name": "Denis Sikuler"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gamtiq/grunt-uniator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gamtiq/grunt-uniator/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/gamtiq/grunt-uniator/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-copy": "~0.5.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin",
+    "combine",
+    "collect",
+    "gather",
+    "join",
+    "unite",
+    "style",
+    "link",
+    "css",
+    "file"
+  ],
+  "dependencies": {
+    "uniator": "0.0.1"
+  }
+}
