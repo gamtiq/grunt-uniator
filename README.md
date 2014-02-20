@@ -91,6 +91,13 @@ Default value: `false`
 
 Whether collected source CSS-files should be removed.
 
+#### options.skipCssFile
+Type: `Array` | `String`  
+
+A CSS-file or list of CSS-files that should not be collected.
+Each file can be specified by name or by path.
+If file has `.css` extension the extension can be omitted.
+
 ### Usage Examples
 
 #### Combine all styles from HTML-file into one file `style.css`
@@ -124,7 +131,7 @@ grunt.initConfig({
 });
 ```
 
-#### Combine and minify all styles from HTML-file, include styles into source HTML-file
+#### Combine and minify all styles from HTML-file besides `plugins.css` and `controls.css`, include styles into source HTML-file
 
 ```js
 grunt.initConfig({
@@ -132,7 +139,8 @@ grunt.initConfig({
         combine_minify_include: {
             options: {
                 include: true,
-                minifyCss: true
+                minifyCss: true,
+                skipCssFile: ["plugins", "controls"]
             },
             src: ["index.html"]
         }

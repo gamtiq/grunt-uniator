@@ -48,6 +48,6 @@
     "file"
   ],
   "dependencies": {
-    "uniator": "0.0.1"
+    "uniator": "~0.0.2"
   }
 }
