@@ -164,7 +164,10 @@ Add unit tests for any new or changed functionality.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+
+* 0.0.2 / 2014-02-20
+    - Update [uniator](https://github.com/gamtiq/uniator) package to 0.0.2
+    - Add `release` tasks in Gruntfile
 
 ## License
 Copyright (c) 2014 Denis Sikuler  
