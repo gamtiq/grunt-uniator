@@ -71,6 +71,15 @@ module.exports = function(grunt) {
         // Unit tests.
         nodeunit: {
             tests: ["test/*_test.js"],
+        },
+        
+        push: {
+            options: {
+                commitMessage: "Release version %VERSION%",
+                commitFiles: ["-a"],
+                tagName: "%VERSION%",
+                tagMessage: "Version %VERSION%"
+            }
         }
 
     });
@@ -83,6 +92,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-nodeunit");
+    grunt.loadNpmTasks("grunt-push-release");
 
     // Whenever the "test" task is run, first clean the "tmp" dir, then run this
     // plugin's task(s), then test the result.
@@ -90,6 +100,11 @@ module.exports = function(grunt) {
 
     // By default, lint and run all tests.
     grunt.registerTask("default", ["jshint", "test"]);
+    
+    // Release tasks
+    grunt.registerTask("release", ["push"]);
+    grunt.registerTask("release-minor", ["push:minor"]);
+    grunt.registerTask("release-major", ["push:major"]);
     
     // For Travis CI service
     grunt.registerTask("travis", ["default"]);
