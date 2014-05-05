@@ -49,6 +49,6 @@
     "file"
   ],
   "dependencies": {
-    "uniator": "~0.0.2"
+    "uniator": "~0.0.3"
   }
 }

@@ -61,7 +61,8 @@ module.exports = function(grunt) {
                     cssFile: "css/combined",
                     destDir: "<%= testDir %>/out",
                     minifyCss: true,
-                    removeSourceFile: true
+                    removeSourceFile: true,
+                    updateUrl: true
                 },
                 src: ["<%= testDir %>/source.html"],
                 dest: "<%= testDir %>/out/processed.html"

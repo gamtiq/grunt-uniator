@@ -98,6 +98,16 @@ A CSS-file or list of CSS-files that should not be collected.
 Each file can be specified by name or by path.
 If file has `.css` extension the extension can be omitted.
 
+#### options.updateUrl
+Type: `Boolean` | `Function`  
+Default value: `false`
+
+Whether URLs found in CSS-files should be updated to be accessible from destination file.
+A function can be used as the option value. In the latter case the function will be called
+instead of predefined function to get new URL. If the function returns a string value, that value will be used as new URL.
+A non-string value returned by the function will be ignored (i.e. the source URL will not be changed).
+Data object will be passed into the function (see [getUpdatedUrl](https://github.com/gamtiq/uniator#getUpdatedUrl) for details).
+
 ### Usage Examples
 
 #### Combine all styles from HTML-file into one file `style.css`
@@ -112,7 +122,7 @@ grunt.initConfig({
 });
 ```
 
-#### Combine and minify all styles from HTML-file, save styles into `path/to/out/css/combined.css`, create new HTML-file `path/to/out/processed.html`, remove source CSS-files
+#### Combine and minify all styles from HTML-file, save styles into `path/to/out/css/combined.css`, update URLs in result CSS-file, create new HTML-file `path/to/out/processed.html`, remove source CSS-files
 
 ```js
 grunt.initConfig({
@@ -122,7 +132,8 @@ grunt.initConfig({
                 cssFile: "css/combined",
                 destDir: "path/to/out",
                 minifyCss: true,
-                removeSourceFile: true
+                removeSourceFile: true,
+                updateUrl: true
             },
             src: ["source.html"],
             dest: "path/to/out/processed.html"
