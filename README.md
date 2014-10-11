@@ -169,6 +169,11 @@ If you need more advanced control over files combining, try one of the following
 * [HTML Builder](https://github.com/spatools/grunt-html-build) - Grunt plugin
 * [Solidify](https://github.com/Stylish-Fantasy/solidify) - CLI tool
 
+Also you may find useful:
+
+* [grunt-init-pack](https://github.com/gamtiq/grunt-init-pack)
+* [grunt-pretest](https://github.com/gamtiq/grunt-pretest)
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality.
