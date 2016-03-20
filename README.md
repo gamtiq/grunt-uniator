@@ -181,6 +181,9 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
+* 0.1.0 / 2016-03-21
+    - Add support for Grunt 1.0.
+
 * 0.0.3 / 2014-05-05
     - Update [uniator](https://github.com/gamtiq/uniator) package to 0.0.3
 
