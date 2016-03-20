@@ -2,7 +2,7 @@
  * grunt-uniator
  * https://github.com/gamtiq/grunt-uniator
  *
- * Copyright (c) 2014 Denis Sikuler
+ * Copyright (c) 2014-2016 Denis Sikuler
  * Licensed under the MIT license.
  */
 

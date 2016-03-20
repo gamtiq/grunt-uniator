@@ -192,5 +192,5 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
     - Add `release` tasks in Gruntfile
 
 ## License
-Copyright (c) 2014 Denis Sikuler  
+Copyright (c) 2014-2016 Denis Sikuler  
 Licensed under the MIT license.
